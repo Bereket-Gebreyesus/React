@@ -1,8 +1,8 @@
 .App {
-  padding: 20px; /* Add padding to the App container */
-  margin-top: -30px; /* Adjust margin if needed */
-  display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Arrange children vertically */
+  padding: 20px; 
+  margin-top: -30px; 
+  display: flex; 
+  flex-direction: column; 
  
 }
 
@@ -14,15 +14,15 @@
 }
 
 .category-list button {
-  padding: 5px 10px; /* Reduce padding to make buttons smaller */
+  padding: 5px 10px; 
   border: none;
   background-color: #868383;
   cursor: pointer;
-  font-size: 14px; /* Reduce font size for better fit */
-  flex-shrink: 1; /* Allow buttons to shrink */
-  min-width: 0; /* Allow buttons to shrink beyond their content width */
-  text-align: center; /* Center text */
-  white-space: nowrap; /* Prevent text from wrapping */
+  font-size: 14px; 
+  flex-shrink: 1; 
+  min-width: 0; 
+  text-align: center; 
+  white-space: nowrap; 
 }
 
 .category-list button.active {
@@ -30,7 +30,7 @@
   color: #fff;
 }
 
-/* Updated styles for the product list */
+
 .product-list {
   display: flex;
   flex-wrap: wrap;
@@ -39,16 +39,13 @@
 }
 
 .product-item {
-  /*border: 1px solid #979696;*/
   padding: 20px;
   width: 100%;
-  /* Set max width and height for the product image */
   max-width: 100%;
-  max-height: 200px; /* Adjust as needed */
+  max-height: 200px; 
 }
 
 .product-item img {
-  /* Ensure images fill the container */
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -65,16 +62,14 @@
   
   .product-item {
     width: calc(50% - 50px);
-    /* Adjust the max-height for larger screens */
-    max-height: 200px; /* Adjust as needed */
+    max-height: 200px;
   }
 }
 
 @media (min-width: 900px) {
   .product-item {
-    width: calc(25% - 60px); /* Change width to 25% */
-    /* Adjust the max-height for larger screens */
-    max-height: 250px; /* Adjust as needed */
+    width: calc(25% - 60px); 
+    max-height: 250px; 
   }
 }
 
