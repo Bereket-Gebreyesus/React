@@ -2,14 +2,16 @@ import React from 'react';
 
 const ProductList = ({ products }) => {
   return (
-    <div className="product-list">
+    <ul className="product-list">
       {products.map(product => (
-        <div className="product-item" key={product.id}>
-            <img src={product.image} className="product-image" alt={product.title} />
-              <p className="product-title">{product.title}</p>
-        </div>
+        <li className="product-item" key={product.id}>
+          <div className="product">
+            <img src={product.image} className="product-image" alt={product.title}></img>
+            <span className="product-title" title={product.title}>{product.title}</span>
+          </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 

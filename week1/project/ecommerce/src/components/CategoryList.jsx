@@ -4,13 +4,13 @@ const CategoryList = ({ categories, selectedCategory, onSelectCategory }) => {
   return (
     <div className="category-list">
       {categories.map(category => (
-        <button
+        <div
           key={category}
           className={`nav-link ${selectedCategory === category ? 'active' : ''}`}
           onClick={() => onSelectCategory(category)}
         >
           {category.replace('FAKE: ', '')}
-        </button>
+        </div>
       ))}
     </div>
   );
