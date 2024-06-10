@@ -87,15 +87,15 @@ span.product-title {
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   .product-item {
-    width: calc(25% - 60px); 
+    width: calc(33% - 60px); 
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .product-item {
-      width: calc(33% - 60px);
+      width: calc(25% - 60px);
   }
 }
 
